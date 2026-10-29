@@ -1,0 +1,9 @@
+project: savantenvs/file
+target: magic_fuzzer_fd
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/magic_fuzzer_fd/testsuite
+cmds:
+  - cmd: /mayhem/bld-bin/magic_fuzzer_fd
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,4 @@
+# Build-context excludes for `docker build -f mayhem/Dockerfile .`. .git is deliberately KEPT:
+# the image holds the full mayhem-branch history. build.sh recreates every bld-* tree from scratch.
+bld-*/
+autom4te.cache/
